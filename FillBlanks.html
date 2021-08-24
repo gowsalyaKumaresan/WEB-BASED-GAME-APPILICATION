@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <style>
+        #frame001 {
+            background-color: white;
+            border: 2px solid black;
+            border-radius: 10px;
+            width: auto;
+            height: auto;
+            padding: 5px;
+        }
+
+        #color001 {
+            color: black;
+            font-size: large;
+            text-align: left;
+        }
+
+        #center001 {
+            text-align: center;
+        }
+
+        .button001 {
+            background-color: blue;
+            color: white;
+            border-radius: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .button002 {
+            width: 10px;
+            height: 10px;
+        }
+    </style>
+    <div id="frame001">
+        <div id="color001">
+            <div id="center001">
+                <h2>Test Your Knowledge</h2>
+            </div>
+
+            <p>1. The father of java is <input type="text" class="check003" id="input001" size="15" /><text class="button002" id="check001"></text></p>
+            <p>2. Which year java has been founded <input type="text" id="input002" size="15" /><text class="button002" id="check002"></text></p>
+            <p>3. Java is a <input type="text" id="input003" size="15" /><text class="button002" id="check003"></text> Programming language</p>
+            <p>4. Jdbc is an <input type="text" id="input004" size="15" /><text class="button002" id="check004"></text> provides universal data access from the Java programming language</p> 
+            <p>5. Selenium web driver is a <input type="text" id="input005" size="15" /><text class="button002" id="check005"></text> that permits you to execute cross-browser tests </p>
+            <p>6. What is the full-form of SDLC ? <input type="text" id="input006" size="15" /><text class="button002" id="check006"></text> </p>
+            <p>7. The sequence of instructions is called a <input type="text" id="input007" size="15" /><text class="button002" id="check007"></text> </p>
+            <p>8. Every object has a <input type="text" id="input008" size="15" /><text class="button002" id="check008"></text> <input type="text" id="input009" size="15" /><text class="button002" id="check009"></text> and <input type="text" id="input0010" size="15" /><text class="button002" id="check0010"></text> </p>
+            <p>9. Java was developed by <input type="text" id="input0011" size="15" /><text class="button002" id="check0011"></text> </p>
+            <p>10. The full form of IDE is <input type="text" id="input0012" size="15" /><text class="button002" id="check0012"></text> </p>
+                
+       
+        <div id="disappear001">
+            <div id="center001">
+                <button class="button001" onclick="submit001()">Submit</button>
+            </div>
+        </div>
+        
+        <br />
+
+        <div id="center001">
+            <p id="message001"></p>
+            <p id="reload001"></p>
+        </div>
+
+                <br />
+
+            <br />
+
+            </div>
+    </div>
+    <script>
+        var g;
+        var h;
+        var i;
+        var j;
+        var k;
+        var m;
+        var n;
+        var o;
+        var p;
+        var q;
+
+        var s;
+        var t;
+       
+
+        function submit001() {
+            
+            b = input001.value;
+            c = input002.value;
+            d = input003.value;
+            e = input004.value;
+            f = input005.value;
+            b1 = input006.value;
+            b2 = input007.value;
+            b3 = input008.value;
+            b4 = input009.value;
+            b5 = input0010.value;
+
+            c1 = input0011.value;
+            c2 = input0012.value;
+    
+
+
+            if (b == "james gosling" || b == "James Gosling") {
+                g = 1;
+                input001.value = b;
+                check001.innerHTML = "<text class=button002>" + "✔" + "</text>";
+            } else {
+                input001.value = b;
+                check001.innerHTML = "<text class=button002>" + "✖" + "</text>";
+            }
+
+            if (c == "1996" || c == "1996") {
+                h = 1
+                input002.value = c;
+                check002.innerHTML = "<text class=button002>" + "✔" + "</text>";
+            } else {
+                input002.value = c;
+                check002.innerHTML = "<text class=button002>" + "✖" + "</text>";
+            }
+
+            if (d == "high-level" || d == "High-Level" || d == "high level" || d == "High Level") {
+                i = 1;
+                input003.value = d;
+                check003.innerHTML = "<text class=button002>" + "✔" + "</text>";
+            } else {
+                input003.value = d;
+                check003.innerHTML = "<text class=button002>" + "✖" + "</text>";
+            }
+
+            if (e == "api" || e == "API") {
+                j = 1;
+                input004.value = e;
+                check004.innerHTML = "<text class=button002>" + "✔" + "</text>";
+            } else {
+                input004.value = e;
+                check004.innerHTML = "<text class=button002>" + "✖" + "</text>";
+            }
+
+            if (f == "web framework" || f == "Web Framework") {
+                k = 1;
+                input005.value = f;
+                check005.innerHTML = "<text class=button002>" + "✔" + "</text>";
+            } else {
+                input005.value = f;
+                check005.innerHTML = "<text class=button002>" + "✖" + "</text>";
+            }
+
+            if(b1 == "Software Development Life Cycle" || b1 == "software development life cycle") {
+                m=1;
+                input006.value = b1;
+                check006.innerHTML = "<text class=button002>" + "✔" + "</text>";
+            } else {
+                input006.value = b1;
+                check006.innerHTML = "<text class=button002>" + "✖" + "</text>";
+
+            }
+
+            if(b2 == "program" || b2 == "Program") {
+                n=1;
+                input007.value = b2;
+                check007.innerHTML = "<text class=button002>" + "✔" + "</text>";
+            } else {
+                input007.value = b2;
+                check007.innerHTML = "<text class=button002>" + "✖" + "</text>";
+
+            }
+
+            if(b3 == "state" || b3 == "State") {
+                o=1;
+                input008.value = b3;
+                check008.innerHTML = "<text class=button002>" + "✔" + "</text>";
+            } else {
+                input008.value = b3;
+                check008.innerHTML = "<text class=button002>" + "✖" + "</text>";
+
+            }
+
+
+            if(b4 == "behaviour" || b4 == "Behaviour") {
+                p=1;
+                input009.value = b4;
+                check009.innerHTML = "<text class=button002>" + "✔" + "</text>";
+            } else {
+                input009.value = b4;
+                check009.innerHTML = "<text class=button002>" + "✖" + "</text>";
+
+            }
+
+            if(b5 == "identity" || b5 == "Identity") {
+                q=1;
+                input0010.value = b5;
+                check0010.innerHTML = "<text class=button002>" + "✔" + "</text>";
+            } else {
+                input0010.value = b5;
+                check0010.innerHTML = "<text class=button002>" + "✖" + "</text>";
+
+            }
+
+
+            if(c1 == "sun microsystems" || c1 == "Sun Microsystems") {
+                s=1;
+                input0011.value = c1;
+                check0011.innerHTML = "<text class=button002>" + "✔" + "</text>";
+            } else {
+                input0011.value = c1;
+                check0011.innerHTML = "<text class=button002>" + "✖" + "</text>";
+
+            }
+
+
+            if(c2 == "integrated development environment" || c2 == "Integrated Development Environment") {
+                t=1;
+                input0012.value = c2;
+                check0012.innerHTML = "<text class=button002>" + "✔" + "</text>";
+            } else {
+                input0012.value = c2;
+                check0012.innerHTML = "<text class=button002>" + "✖" + "</text>";
+
+            }
+
+            
+
+            if (g == 1 && h == 1 && i == 1 && j == 1 && k == 1 && m == 1 && n == 1 && o == 1 && p == 1 && q == 1 && s == 1 && t == 1) {
+                message001.innerHTML = "Congratulation! You have successfully finished this quiz.";
+                disappear001.innerHTML = "";
+                reload001.innerHTML = "<div id=center001><button class=button001 onclick=repeat001()>Repeat</button></div>";
+            }
+        }
+
+            function repeat001() {
+                location.reload();
+            }
+    </script>
+</body>
+</html>

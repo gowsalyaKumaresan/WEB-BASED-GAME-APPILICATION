@@ -1,0 +1,55 @@
+<?php
+// Initialize the session
+session_start();
+ 
+// Check if the user is logged in, if not then redirect him to login page
+if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
+    header("location: login.php");
+    exit;
+}
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700%7CPT+Serif:400,700,400italic' rel='stylesheet'>
+		  <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>HCL GAMING</title>
+</head>
+<body>
+
+	<div class="bgimage">
+		
+		<div class="menu">
+			<div class="leftmenu">
+				<h4>GAMER</h4>
+                   <h3 Style="color:red" class="my-5">WELCOME,<?php echo htmlspecialchars($_SESSION["username"]); ?>
+			</div>
+			<div class="rightmenu">
+				<ul>
+                 
+                    <a href="game.html"><li>Games</li></a>
+                    <a href="About.html"><li>About us</li></a>
+                    <a href="servies.html"><li>Services</li></a>
+                    <a href="contact.html"><li>Contact</li></a>
+                    <a href="logout.php"><li>Logout</li></a>
+                    <a href="reset-password.php"><li>Change Password</li></a>
+				</ul>
+			</div>
+		</div>
+		<div class="text">
+			<h4> GAMING • ENTERTAINING • ENJOYING</h4>
+            <span class="m-left">G</span>
+            <span class="m-left">A</span>
+            <span class="m-left">M</span>
+            <span class="m-left">E</span>
+            <span class="m-left">R</span>
+			<h3>ENJOY YOUR LIFE FREE FROM EVERYONE</h3>
+            
+		</div>
+
+	</div>
+
+</body>
+</html>

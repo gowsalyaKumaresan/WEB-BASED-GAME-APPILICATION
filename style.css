@@ -1,0 +1,323 @@
+*{
+	margin: 0px;
+	padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bgimage{
+	background-image: url('Image/WallpaperAcces.jpg');
+	background-size: 100% 110%;
+	width: 100%;
+	height: 100vh;
+}
+
+.menu{
+	width: 100%;
+	height: 100px;
+	background-color: rgba(0,0,0,0.5);
+}
+
+.leftmenu{
+	width: 10%;
+	line-height: 100px;
+	float: left;
+}
+
+.leftmenu h4{
+	padding-left: 70px;
+	font-weight: bold;
+	color: white;
+	font-size: 25px;
+	font-family: 'Montserrat', sans-serif;
+    color: aqua;
+
+}
+.rightmenu{
+	width: -500%;
+	height: 100px;
+    padding-left: 200px;
+}
+
+
+.rightmenu ul{
+	margin-left: 0px;
+}
+
+.rightmenu ul li{
+	font-family: 'Montserrat', sans-serif;
+	display: inline-block;
+	list-style: none;
+	font-size: 15px;
+	font-weight: bold;
+	line-height: 100px;
+	margin-left: 20px;
+	text-transform: uppercase;
+    color: aqua;
+}
+
+.rightmenu ul li:hover{
+	color: orange;
+}
+
+.text{
+	width: 100%;
+	margin-top: 185px;
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+}
+.text h4
+{
+	font-size: 14px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.text span{
+    display: inline-block;
+	font-size: 62px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700px;
+	margin: 14px 0px;
+}
+span:hover
+{
+    color: black;
+    transition: all .5s;
+}
+
+.text h3{
+	font-size: 12px;
+	font-family: 'Montserrat', sans-serif;
+    padding-bottom: 12px;
+}
+.Login {
+  background-color: #04AA6D;
+  color: black;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 10%;
+  font-size: 1.2rem;
+}
+/*------------------------------About--------------------------*/
+.about h1
+{
+    font-size: 7rem;
+    margin-bottom: 50px;
+    margin-left: 250px;
+    margin-top: 50px;
+}
+.about-me-info
+{
+    max-width: 900px;
+    background-color: #252627;
+    box-shadow: 0 0 1.2rem rgba(0,0,0,.25);
+    padding: 50px;
+    position:relative;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+.about-me-info p
+{
+    font-size: 1.2rem;
+    color: #BEBEBE;
+    text-align: justify;
+}
+.about-me-info p:nth-child(n),
+.about-me-info p:last-child
+{
+    margin-top: 30px;
+}
+
+
+/* ---------------------Services Section *------------------*/
+h1.section-title {	
+   font-size: 6rem;
+    margin-top: -50px;
+    margin-bottom: 45px;
+    margin-left: -900px;
+    } 
+#services .services {	
+    flex-direction: column;	
+    text-align: center;	
+    max-width: 1500px;	
+    margin: 0 auto;	
+    padding: 100px 0;
+}
+#services .service-top {	
+    max-width: 500px;	
+    margin: 0 auto;
+}
+#services .service-bottom {	
+    display: flex;	
+    align-items: center;	
+    justify-content: center;	
+    flex-wrap: wrap;	
+    margin-top: 50px;
+}
+#services .service-item {	
+    flex-basis: 80%;	
+    display: flex;	
+    align-items: flex-start;	
+    justify-content: center;	
+    flex-direction: column;	
+    padding: 30px;	
+    border-radius: 10px;	
+    background-image: url(./img/img-1.png);	
+    background-size: cover;	
+    margin: 10px 5%;	
+    position: relative;	
+    z-index: 1;	
+    overflow: hidden;
+}
+#services .service-item::after {	
+    content: '';	
+    position: absolute;	
+    left: 0;	
+    top: 0;	
+    height: 100%;	
+    width: 100%;	
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);	
+    opacity: .9;	
+    z-index: -1;
+}
+#services .service-bottom .icon {	
+    height: 80px;	
+    width: 80px;	
+    margin-bottom: 10px;
+}
+#services .service-item h2 {	
+    font-size: 2rem;	
+    color: white;	
+    margin-bottom: 5px;	
+    text-transform: uppercase;
+}
+#services .service-item p {	
+    color: white;	
+    text-align: left;
+}
+
+/*------------------------------ contact Section--------------------------- */
+
+h1.section-title1 {	
+    font-size: 6rem;
+    margin-bottom: 50px;
+    } 
+#contact .contact {	
+    flex-direction: column;	
+    max-width: 1200px;	
+    margin: 0 auto;
+}
+#contact .contact-items {	
+    width: 400px;
+}
+#contact .contact-item {	
+    width: 80%;	
+    padding: 20px;	
+    text-align: center;	
+    border-radius: 10px;	
+    padding: 30px;	
+    margin: 30px;	
+    display: flex;	
+    justify-content: center;	
+    align-items: center;	
+    flex-direction: column;	
+    box-shadow: 0px 0px 18px 0 #0000002c;	
+    transition: .3s ease box-shadow;
+}
+#contact .contact-item:hover {	
+    box-shadow: 0px 0px 5px 0 #0000002c;
+}
+#contact .icon {	
+    width: 70px;	
+    margin: 0 auto;	
+    margin-bottom: 10px;
+}
+#contact .contact-info h1 {	
+    font-size: 2.5rem;	
+    font-weight: 500;	
+    margin-bottom: 5px;
+}
+#contact .contact-info h2 {	
+    font-size: 1.3rem;	
+    line-height: 2rem;	
+    font-weight: 500;
+}
+#contact .contact {		
+    flex-direction: column;		
+    padding: 100px 0;		
+    align-items: center;		
+    justify-content: center;		
+    min-width: 20vh;	}	
+#contact .contact-items {		
+    width: 100%;		
+    display: flex;		
+    flex-direction: row;		
+    justify-content: space-evenly;		
+    margin: 0;	
+}	
+#contact .contact-item {		
+    width: 30%;		
+    margin: 0;
+    flex-direction: row;	
+}
+#contact .contact-item .icon {
+    height: 100px;		
+    width: 100px;	
+}	
+#contact .contact-item .icon img {		
+    object-fit: contain;	
+}	
+#contact .contact-item .contact-info {		
+    width: 100%;		
+    text-align: left;	
+    padding-left: 20px;	
+}
+/* Media Query For Desktop */
+@media only screen and (min-width: 1200px) {	
+    #services .service-bottom .service-item {		
+        flex-basis: 22%;		
+        margin: 1.5%;	
+    }
+}
+/*---------------------------gaming-----------------------*/
+
+.title-box
+{
+    background: black;
+    color: #fff;
+    width:180px;
+    padding: 4px 5px 5px 10px;
+    height: 40px;
+    margin-bottom: 30px;
+    display: flex;
+}
+.title-box h2
+{
+    font-size: 24px;
+    margin-left: 45px;
+    margin-top: 5px;
+}
+.product-top img
+{
+    padding-left: 150px;
+    padding-top: 1px;
+    resize: both 200px 200px;
+}
+.col-md-3 h3
+{
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 10px;
+    margin-left: 155px;
+}
+.col-md-3 {
+  float: left;
+  width: 25 %;
+  padding: 5px;
+  margin-left: 100px;
+}
+
